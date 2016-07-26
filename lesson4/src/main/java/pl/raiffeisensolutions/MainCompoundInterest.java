@@ -25,8 +25,8 @@ public class MainCompoundInterest {
 
 
         potega = compoundingFrequency.multiply(numberOfYear);
-        wynik = (BigDecimal.ONE.add(nominalInterestRate.divide(compoundingFrequency,2))).pow(potega.intValue()).setScale(0,RoundingMode.DOWN);
-        System.out.println(wynik.multiply(principalSum));
+        wynik = ((BigDecimal.ONE.add(nominalInterestRate.divide(compoundingFrequency,2))).pow(potega.intValue()).setScale(0,RoundingMode.DOWN)).multiply(principalSum);
+        System.out.println(wynik);
 
 
 
